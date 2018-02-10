@@ -25,7 +25,7 @@ public class Boletin101 {
             }                
             if(r==u){            
           JOptionPane.showMessageDialog(null,"Acertáches");
-            break;
+           break;
        }    
        }
        }

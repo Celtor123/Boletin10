@@ -1,44 +1,45 @@
 
 package boletin10;
 
-import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class Boletin102 {
-    Scanner a = new Scanner(System.in);
+    int diferencia;
      public void xogo(){
-      int r = a.nextInt(50-1);
-       String b= JOptionPane.showInputDialog("Poña o número de intentos do xogador2");
-       int y=Integer.parseInt(b);
-       if(1<r){
-           if(r<50){
-               
-           
-       for(int w=1;w<=y;w++){
-                String z= JOptionPane.showInputDialog("XOGADOR 2 \n Poña o número do xogador1");
+     
+      
+       int r= (int) (Math.random() * (51 - 1)) + 1;
+         JOptionPane.showMessageDialog(null,"O número do ordenador está posto");
+         String b= JOptionPane.showInputDialog("Poña o número de intentos que quera ter");
+          int y=Integer.parseInt(b);
+      
+          for(int w=1;w<=y;w++){
+                String z= JOptionPane.showInputDialog("XOGADOR \n Adiviñe o número");
             int u=Integer.parseInt(z);
-            
-            if(r<u){
-                JOptionPane.showMessageDialog(null,"O número é máis pequeno");
-            }
-            else if(r>u){
-                JOptionPane.showMessageDialog(null,"O número é máis grande");
-            }                
+            diferencia=Math.abs(r-u);
+                       
             if(r==u){            
-          JOptionPane.showMessageDialog(null,"Acertáches");
-            break;
-       }    
+          JOptionPane.showMessageDialog(null,"Acertáches");  
+          break;
+       }
+            else{
+                if(diferencia>20){
+                   System.out.println("moi lonxe");
+                }
+                if(10<=diferencia&&diferencia<=20){
+                   System.out.println("lonxe");
+                }
+                if(5<diferencia&&diferencia<10){
+                   System.out.println("preto");
+                }
+               if(diferencia<=5){
+                  System.out.println("moi preto"); 
+               }
+            }
        }
        }
-           else{
-          JOptionPane.showMessageDialog(null,"   número inválido \n               1-50");
-           }
-       }
-       else{
-          JOptionPane.showMessageDialog(null,"   número inválido \n               1-50"); 
-       }
-    }
-      public static void main(String[] args) {
+          
+          public static void main(String[] args) {
          Boletin102 b= new Boletin102();
          b.xogo();
     }
