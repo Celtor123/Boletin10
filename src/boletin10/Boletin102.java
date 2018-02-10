@@ -6,8 +6,6 @@ import javax.swing.JOptionPane;
 public class Boletin102 {
     int diferencia;
      public void xogo(){
-     
-      
        int r= (int) (Math.random() * (51 - 1)) + 1;
          JOptionPane.showMessageDialog(null,"O número do ordenador está posto");
          String b= JOptionPane.showInputDialog("Poña o número de intentos que quera ter");

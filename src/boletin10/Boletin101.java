@@ -10,9 +10,7 @@ public class Boletin101 {
        String b= JOptionPane.showInputDialog("Poña o número de intentos do xogador2");
        int y=Integer.parseInt(b);
        if(1<r){
-           if(r<50){
-               
-           
+           if(r<50){      
        for(int w=1;w<=y;w++){
                 String z= JOptionPane.showInputDialog("XOGADOR 2 \n Poña o número do xogador1");
             int u=Integer.parseInt(z);
