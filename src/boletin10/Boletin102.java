@@ -17,7 +17,7 @@ public class Boletin102 {
             diferencia=Math.abs(r-u);
                        
             if(r==u){            
-          JOptionPane.showMessageDialog(null,"Acertáches");  
+          JOptionPane.showMessageDialog(null,"Acertáches \n intento "+w);  
           break;
        }
             else{
